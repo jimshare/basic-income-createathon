@@ -1,0 +1,280 @@
+npm info it worked if it ends with ok
+npm verb cli [ 'node', '/usr/local/bin/npm', 'install', '-ddd', 'node-sass' ]
+npm info using npm@2.14.3
+npm info using node@v0.10.33
+npm verb install initial load of /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/asset-builder/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/browser-sync/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/del/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/gulp/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/gulp-autoprefixer/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/gulp-changed/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/gulp-concat/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/gulp-flatten/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/gulp-if/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/gulp-imagemin/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/gulp-jshint/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/gulp-less/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/gulp-minify-css/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/gulp-plumber/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/gulp-rename/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/gulp-rev/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/gulp-sass/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/gulp-sourcemaps/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/gulp-uglify/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/imagemin-pngcrush/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/jshint-stylish/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/lazypipe/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/merge-stream/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/minimist/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/run-sequence/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/traverse/package.json
+npm verb installManyTop reading scoped package data from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/wiredep/package.json
+npm info package.json gulp-if@1.2.5 No license field.
+npm info package.json gulp-rename@1.2.2 No license field.
+npm info package.json lazypipe@0.2.4 No license field.
+npm info package.json wiredep@2.2.2 No license field.
+npm verb readDependencies loading dependencies from /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/package.json
+npm sill cache add args [ 'node-sass', null ]
+npm verb cache add spec node-sass
+npm sill cache add parsed spec { raw: 'node-sass',
+npm sill cache add   scope: null,
+npm sill cache add   name: 'node-sass',
+npm sill cache add   rawSpec: '',
+npm sill cache add   spec: '*',
+npm sill cache add   type: 'range' }
+npm sill addNamed node-sass@*
+npm verb addNamed "*" is a valid semver range for node-sass
+npm sill addNameRange { name: 'node-sass', range: '*', hasData: false }
+npm sill mapToRegistry name node-sass
+npm sill mapToRegistry using default registry
+npm sill mapToRegistry registry https://registry.npmjs.org/
+npm sill mapToRegistry uri https://registry.npmjs.org/node-sass
+npm verb addNameRange registry:https://registry.npmjs.org/node-sass not in flight; fetching
+npm verb request uri https://registry.npmjs.org/node-sass
+npm verb request no auth needed
+npm info attempt registry request try #1 at 16:30:14
+npm verb request id f50baef27a5f8a9f
+npm http request GET https://registry.npmjs.org/node-sass
+npm http 200 https://registry.npmjs.org/node-sass
+npm sill get cb [ 200,
+npm sill get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+npm sill get     etag: '"BVW033F5RL0UD3F5EHZW72TWR"',
+npm sill get     'content-type': 'application/json',
+npm sill get     'cache-control': 'max-age=60',
+npm sill get     'content-length': '142546',
+npm sill get     'accept-ranges': 'bytes',
+npm sill get     date: 'Sat, 12 Sep 2015 23:30:14 GMT',
+npm sill get     via: '1.1 varnish',
+npm sill get     age: '0',
+npm sill get     connection: 'keep-alive',
+npm sill get     'x-served-by': 'cache-ord1729-ORD',
+npm sill get     'x-cache': 'HIT',
+npm sill get     'x-cache-hits': '1',
+npm sill get     'x-timer': 'S1442100614.579233,VS0,VE38',
+npm sill get     vary: 'Accept' } ]
+npm verb get saving node-sass to /Users/justinelam/.npm/registry.npmjs.org/node-sass/.cache.json
+npm verb makeDirectory /Users/justinelam/.npm creation not in flight; initializing
+npm sill makeDirectory /Users/justinelam/.npm uid: 501 gid: 20
+npm sill addNameRange number 2 { name: 'node-sass', range: '*', hasData: true }
+npm sill addNameRange versions [ 'node-sass',
+npm sill addNameRange   [ '0.2.0',
+npm sill addNameRange     '0.2.1',
+npm sill addNameRange     '0.2.2',
+npm sill addNameRange     '0.2.3',
+npm sill addNameRange     '0.2.4',
+npm sill addNameRange     '0.2.5',
+npm sill addNameRange     '0.2.6',
+npm sill addNameRange     '0.3.0',
+npm sill addNameRange     '0.4.0',
+npm sill addNameRange     '0.4.1',
+npm sill addNameRange     '0.4.2',
+npm sill addNameRange     '0.4.3',
+npm sill addNameRange     '0.4.4',
+npm sill addNameRange     '0.5.0',
+npm sill addNameRange     '0.5.1',
+npm sill addNameRange     '0.5.2',
+npm sill addNameRange     '0.5.3',
+npm sill addNameRange     '0.5.4',
+npm sill addNameRange     '0.6.0',
+npm sill addNameRange     '0.6.1',
+npm sill addNameRange     '0.6.2',
+npm sill addNameRange     '0.6.3',
+npm sill addNameRange     '0.6.4',
+npm sill addNameRange     '0.6.5',
+npm sill addNameRange     '0.6.6',
+npm sill addNameRange     '0.6.7',
+npm sill addNameRange     '0.7.0-alpha',
+npm sill addNameRange     '0.7.0',
+npm sill addNameRange     '0.8.0',
+npm sill addNameRange     '0.8.1',
+npm sill addNameRange     '0.8.2',
+npm sill addNameRange     '0.8.3',
+npm sill addNameRange     '0.8.4',
+npm sill addNameRange     '0.8.5',
+npm sill addNameRange     '0.8.6',
+npm sill addNameRange     '0.9.0',
+npm sill addNameRange     '0.9.1',
+npm sill addNameRange     '0.9.2',
+npm sill addNameRange     '0.9.3',
+npm sill addNameRange     '0.9.4-rc1',
+npm sill addNameRange     '0.9.4',
+npm sill addNameRange     '0.9.5-rc1',
+npm sill addNameRange     '0.9.5',
+npm sill addNameRange     '0.9.6',
+npm sill addNameRange     '1.0.0',
+npm sill addNameRange     '1.0.1',
+npm sill addNameRange     '1.0.2-alpha',
+npm sill addNameRange     '1.0.2',
+npm sill addNameRange     '1.0.3',
+npm sill addNameRange     '1.1.0',
+npm sill addNameRange     '1.1.1',
+npm sill addNameRange     '1.1.2',
+npm sill addNameRange     '1.1.3',
+npm sill addNameRange     '1.1.4',
+npm sill addNameRange     '1.2.0',
+npm sill addNameRange     '1.2.1',
+npm sill addNameRange     '1.2.2',
+npm sill addNameRange     '1.2.3',
+npm sill addNameRange     '2.0.0-beta',
+npm sill addNameRange     '2.0.0',
+npm sill addNameRange     '2.0.1',
+npm sill addNameRange     '3.0.0-alpha.0',
+npm sill addNameRange     '3.0.0-beta.2',
+npm sill addNameRange     '3.0.0-beta.3',
+npm sill addNameRange     '3.0.0-beta.4',
+npm sill addNameRange     '2.1.0',
+npm sill addNameRange     '2.1.1',
+npm sill addNameRange     '3.0.0-beta.5',
+npm sill addNameRange     '3.0.0-beta.7',
+npm sill addNameRange     '3.0.0',
+npm sill addNameRange     '3.1.0',
+npm sill addNameRange     '3.1.1',
+npm sill addNameRange     '3.1.2',
+npm sill addNameRange     '3.2.0',
+npm sill addNameRange     '3.3.0',
+npm sill addNameRange     '3.3.1',
+npm sill addNameRange     '3.3.2' ] ]
+npm sill addNamed node-sass@3.3.2
+npm verb addNamed "3.3.2" is a plain semver version for node-sass
+npm sill mapToRegistry name node-sass
+npm sill mapToRegistry using default registry
+npm sill mapToRegistry registry https://registry.npmjs.org/
+npm sill mapToRegistry uri https://registry.npmjs.org/node-sass
+npm verb addRemoteTarball https://registry.npmjs.org/node-sass/-/node-sass-3.3.2.tgz not in flight; adding
+npm verb addRemoteTarball [ 'https://registry.npmjs.org/node-sass/-/node-sass-3.3.2.tgz',
+npm verb addRemoteTarball   '2ce74e3fcd56c0c14eb2a9214af83f128d7fa54a' ]
+npm info retry fetch attempt 1 at 16:30:15
+npm info attempt registry request try #1 at 16:30:15
+npm http fetch GET https://registry.npmjs.org/node-sass/-/node-sass-3.3.2.tgz
+npm http fetch 200 https://registry.npmjs.org/node-sass/-/node-sass-3.3.2.tgz
+npm sill fetchAndShaCheck shasum 2ce74e3fcd56c0c14eb2a9214af83f128d7fa54a
+npm verb addTmpTarball /var/folders/f1/pm0zd31n0311jtc3br6x82mh0000gn/T/npm-28846-253aa04d/registry.npmjs.org/node-sass/-/node-sass-3.3.2.tgz not in flight; adding
+npm verb addTmpTarball already have metadata; skipping unpack for node-sass@3.3.2
+npm sill cache afterAdd node-sass@3.3.2
+npm verb afterAdd /Users/justinelam/.npm/node-sass/3.3.2/package/package.json not in flight; writing
+npm verb afterAdd /Users/justinelam/.npm/node-sass/3.3.2/package/package.json written
+npm sill install resolved [ { name: 'node-sass',
+npm sill install resolved     version: '3.3.2',
+npm sill install resolved     libsass: '3.2.5',
+npm sill install resolved     description: 'Wrapper around libsass',
+npm sill install resolved     license: 'MIT',
+npm sill install resolved     homepage: 'https://github.com/sass/node-sass',
+npm sill install resolved     repository: 
+npm sill install resolved      { type: 'git',
+npm sill install resolved        url: 'git+https://github.com/sass/node-sass.git' },
+npm sill install resolved     author: 
+npm sill install resolved      { name: 'Andrew Nesbitt',
+npm sill install resolved        email: 'andrewnez@gmail.com',
+npm sill install resolved        url: 'http://andrew.github.com' },
+npm sill install resolved     engines: { node: '>=0.10.0' },
+npm sill install resolved     main: 'lib/index.js',
+npm sill install resolved     nodeSassConfig: { binarySite: 'https://github.com/sass/node-sass/releases/download' },
+npm sill install resolved     bin: { 'node-sass': 'bin/node-sass' },
+npm sill install resolved     gypfile: true,
+npm sill install resolved     scripts: 
+npm sill install resolved      { coverage: 'node scripts/coverage.js',
+npm sill install resolved        install: 'node scripts/install.js',
+npm sill install resolved        postinstall: 'node scripts/build.js',
+npm sill install resolved        pretest: 'jshint bin lib scripts test',
+npm sill install resolved        test: 'mocha test' },
+npm sill install resolved     files: [ 'bin', 'binding.gyp', 'lib', 'scripts', 'src' ],
+npm sill install resolved     keywords: [ 'css', 'libsass', 'preprocessor', 'sass', 'scss', 'style' ],
+npm sill install resolved     dependencies: 
+npm sill install resolved      { 'async-foreach': '^0.1.3',
+npm sill install resolved        chalk: '^1.1.1',
+npm sill install resolved        gaze: '^0.5.1',
+npm sill install resolved        'get-stdin': '^4.0.1',
+npm sill install resolved        glob: '^5.0.14',
+npm sill install resolved        meow: '^3.3.0',
+npm sill install resolved        mkdirp: '^0.5.1',
+npm sill install resolved        nan: '^2.0.8',
+npm sill install resolved        npmconf: '^2.1.2',
+npm sill install resolved        pangyp: '^2.3.0',
+npm sill install resolved        request: '^2.61.0',
+npm sill install resolved        'sass-graph': '^2.0.1' },
+npm sill install resolved     devDependencies: 
+npm sill install resolved      { coveralls: '^2.11.4',
+npm sill install resolved        'cross-spawn': '^2.0.0',
+npm sill install resolved        istanbul: '^0.3.18',
+npm sill install resolved        jshint: '^2.8.0',
+npm sill install resolved        mocha: '^2.2.5',
+npm sill install resolved        'mocha-lcov-reporter': '^0.0.2',
+npm sill install resolved        rimraf: '^2.4.2' },
+npm sill install resolved     gitHead: '7d416cda9d2d2b2317ce4a41a6460f4c5867f147',
+npm sill install resolved     bugs: { url: 'https://github.com/sass/node-sass/issues' },
+npm sill install resolved     _id: 'node-sass@3.3.2',
+npm sill install resolved     _shasum: '2ce74e3fcd56c0c14eb2a9214af83f128d7fa54a',
+npm sill install resolved     _from: 'node-sass@*',
+npm sill install resolved     _npmVersion: '2.13.1',
+npm sill install resolved     _nodeVersion: '0.10.29',
+npm sill install resolved     _npmUser: { name: 'xzyfer', email: 'xzyfer@gmail.com' },
+npm sill install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+npm sill install resolved     dist: 
+npm sill install resolved      { shasum: '2ce74e3fcd56c0c14eb2a9214af83f128d7fa54a',
+npm sill install resolved        tarball: 'http://registry.npmjs.org/node-sass/-/node-sass-3.3.2.tgz' },
+npm sill install resolved     directories: {},
+npm sill install resolved     _resolved: 'https://registry.npmjs.org/node-sass/-/node-sass-3.3.2.tgz' } ]
+npm info install node-sass@3.3.2 into /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson
+npm info installOne node-sass@3.3.2
+npm verb installOne of node-sass to /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson not in flight; installing
+npm verb makeDirectory /Users/justinelam/.npm/_locks creation not in flight; initializing
+npm sill makeDirectory /Users/justinelam/.npm/_locks uid: 501 gid: 20
+npm verb lock using /Users/justinelam/.npm/_locks/node-sass-dca2ed044848fb6f.lock for /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass
+npm sill install write writing node-sass 3.3.2 to /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass
+npm verb unbuild node_modules/node-sass
+npm sill gentlyRm /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass is being purged from base /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson
+npm verb gentlyRm don't care about contents; nuking /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass
+npm sill vacuum-fs purging /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass
+npm verb unlock done using /Users/justinelam/.npm/_locks/node-sass-dca2ed044848fb6f.lock for /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass
+npm verb stack Error: EACCES, unlink '/Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass/node_modules/.bin/mkdirp'
+npm verb cwd /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson
+npm ERR! Darwin 14.5.0
+npm ERR! argv "node" "/usr/local/bin/npm" "install" "-ddd" "node-sass"
+npm ERR! node v0.10.33
+npm ERR! npm  v2.14.3
+npm ERR! path /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass/node_modules/.bin/mkdirp
+npm ERR! code EACCES
+npm ERR! errno 3
+
+npm ERR! Error: EACCES, unlink '/Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass/node_modules/.bin/mkdirp'
+npm ERR!  { [Error: EACCES, unlink '/Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass/node_modules/.bin/mkdirp']
+npm ERR!   errno: 3,
+npm ERR!   code: 'EACCES',
+npm ERR!   path: '/Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass/node_modules/.bin/mkdirp' }
+npm ERR! 
+npm ERR! Please try running this command again as root/Administrator.
+npm verb exit [ 3, true ]
+npm verb unbuild node_modules/node-sass
+npm sill gentlyRm /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass is being purged from base /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson
+npm verb gentlyRm don't care about contents; nuking /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass
+npm sill vacuum-fs purging /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass
+npm ERR! error rolling back Error: EACCES, unlink '/Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass/node_modules/.bin/mkdirp'
+npm ERR! error rolling back  { [Error: EACCES, unlink '/Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass/node_modules/.bin/mkdirp']
+npm ERR! error rolling back   errno: 3,
+npm ERR! error rolling back   code: 'EACCES',
+npm ERR! error rolling back   path: '/Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/node_modules/node-sass/node_modules/.bin/mkdirp' }
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /Users/justinelam/Sites/kingson_wp/wp-content/themes/kingson/npm-debug.log
