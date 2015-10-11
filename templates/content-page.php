@@ -24,7 +24,7 @@
     <section id="basic_income" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-				<?php the_content(); ?>
+                <?php echo types_render_field("basic-income-information", array("output"=>"html")); ?>
             </div>
         </div>
     </section>
@@ -34,7 +34,7 @@
         <div class="createathon-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <?php echo types_render_field("createathon-information", array("output"=>"html")); ?>
+					<?php the_content(); ?>
                 </div>
             </div>
         </div>
