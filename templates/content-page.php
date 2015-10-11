@@ -1,5 +1,5 @@
     <!-- Intro Header -->
-    <header class="intro">
+    <header id="page-top" class="intro">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
