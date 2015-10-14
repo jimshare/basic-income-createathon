@@ -295,6 +295,10 @@ a:focus {
 .content-section {
     padding: 100px 0;
 }
+.content-section iframe {
+	width: 320px;
+	height: 180px;
+}
 
 .createathon-section {
     width: 100%;
@@ -342,6 +346,10 @@ a:focus {
     .content-section {
         padding: 150px 0;
     }
+	.content-section iframe {
+		width: 500px;
+		height: 281px;
+	}
 	.createathon-section .container {
 		padding: 150px 0;
 	}
