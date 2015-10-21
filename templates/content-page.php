@@ -49,6 +49,7 @@
                 <p>
                 	<iframe src="<?php echo types_render_field("eventbrite-link", array("output"=>"raw")); ?>" frameborder="0" height="370" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
                 </p>
+                <p class="note">Having trouble with the Eventbrite interface? <a href="<?php echo types_render_field("eventbrite-backup-link", array("output"=>"raw")); ?>" target="_blank">Click here to go to the event page directly.</a></p>
             </div>
         </div>
     </section>

@@ -35,12 +35,18 @@ p {
     font-size: 18px;
     line-height: 1.5;
 }
+p.note {
+	font-size: 16px;
+}
 
 @media(min-width:768px) {
     p {
         margin: 0 0 35px;
         font-size: 24px;
         line-height: 1.6;
+    }
+    p.note {
+    	font-size: 18px;
     }
 }
 
@@ -348,7 +354,7 @@ a:focus {
     }
 	.content-section iframe {
 		width: 640px;
-		height: 360px;
+		height: 280px;
 	}
 	.createathon-section .container {
 		padding: 150px 0;
