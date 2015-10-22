@@ -60,7 +60,7 @@
             <div class="container">
 				<div class="col-lg-8 col-lg-offset-2">
 					<h2>Sponsors</h2>
-					<p>This event would not be possible without the support of our generous sponsors.</p>
+					<p>This event would not be possible without the support of our generous sponsors. If your organization would like to support the Createathon as well, please <a href="#contact" class="page-scroll">let us know!</a></p>
 					<div class="logo-box">
 						<?php $the_query = new WP_Query(array(
 							'post_type' => 'sponsor'
