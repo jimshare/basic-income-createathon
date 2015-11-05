@@ -29,7 +29,7 @@
         </div>
     </section>
 
-    <!-- Createathon Section -->
+    <!-- Create-A-Thon Section -->
     <section id="createathon" class="text-center">
         <div class="createathon-section">
             <div class="container">
@@ -60,14 +60,14 @@
             <div class="container">
 				<div class="col-lg-8 col-lg-offset-2">
 					<h2>Sponsors</h2>
-					<p>This event would not be possible without the support of our generous sponsors. If your organization would like to support the Createathon as well, please <a href="#contact" class="page-scroll">let us know!</a></p>
+					<p>This event would not be possible without the support of our generous sponsors. If your organization would like to support the Create-A-Thon as well, please <a href="#contact" class="page-scroll">let us know!</a></p>
 					<div class="logo-box">
 						<?php $the_query = new WP_Query(array(
 							'post_type' => 'sponsor'
 						));
-						while ( $the_query->have_posts() ) : $the_query->the_post(); 
+						while ( $the_query->have_posts() ) : $the_query->the_post();
 						?>
-						
+
 						<div class="col-lg-4 col-md-6 col-sm-6 .col-xs-12">
 							<div class="logo">
 								<a href="<?php echo types_render_field("sponsor-url", array("output" => "raw")); ?>" target="_blank">
@@ -92,4 +92,3 @@
             </div>
         </div>
     </section>
-        
