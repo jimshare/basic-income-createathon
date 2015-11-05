@@ -7,7 +7,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
             </div>
-            
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
@@ -16,7 +16,7 @@
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="/createathon">The Createathon</a>
+                        <a href="/createathon">The Create-A-Thon</a>
                     </li>
                     <li>
                         <a href="/#contact">Contact</a>
