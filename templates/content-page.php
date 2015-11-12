@@ -70,9 +70,13 @@
 
 						<div class="col-lg-4 col-md-6 col-sm-6 .col-xs-12">
 							<div class="logo">
+							<?php if (types_render_field("sponsor-url", array("output" => "raw")) != '') : ?>
 								<a href="<?php echo types_render_field("sponsor-url", array("output" => "raw")); ?>" target="_blank">
 									<?php echo types_render_field("sponsor-logo", array("alt" => $post->post_title)); ?>
 								</a>
+							<?php else : ?>
+									<?php echo types_render_field("sponsor-logo", array("alt" => $post->post_title)); ?>
+							<?php endif; ?>
 							</div>
 						</div>
 
