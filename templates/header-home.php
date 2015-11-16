@@ -26,19 +26,16 @@
                         <a class="page-scroll" href="#page-top">Home</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#basic_income">Why Basic Income?</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#createathon">The Create-A-Thon</a>
+                        <a class="page-scroll" href="#createathons">The Create-A-Thons</a>
                     </li>
                     <li>
-                        <a class="page-scroll hidden-sm" href="#sponsors">Sponsors</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll btn btn-default" href="#register">Register</a>
+                        <a class="page-scroll btn btn-default" href="#organize">Get Started</a>
                     </li>
                 </ul>
             </div>

@@ -154,7 +154,7 @@ a:focus {
     color: #42dca3;
     background-color: transparent;
     margin-left: 10px;
-    width: 120px;
+    width: 158px;
 }
 
 .navbar-custom .nav li a.btn-default:hover,
@@ -203,17 +203,22 @@ a:focus {
     vertical-align: middle;
 }
 
-.intro .intro-body .preface-text {
+.intro .intro-body .preface-text, .intro .intro-body .suffix-text {
     font-size: 18px;
     margin: 0;
 }
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
+    margin: 0;
 }
 
 .intro .intro-body .intro-text {
     font-size: 18px;
+}
+
+.intro .intro-body .suffix-text {
+  margin: 0 0 35px;
 }
 
 @media(min-width:768px) {
@@ -226,7 +231,7 @@ a:focus {
         font-size: 76px;
     }
 
-    .intro .intro-body .preface-text, .intro .intro-body .intro-text {
+    .intro .intro-body .preface-text, .intro .intro-body .intro-text, .intro .intro-body .suffix-text {
         font-size: 26px;
     }
 }
@@ -326,19 +331,29 @@ a:focus {
 	height:560px;
 }
 
-.createathon-section {
+.wide-section {
     width: 100%;
-    padding: 50px 0;
     color: #fff;
-    background: url(../images/createathon-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
+}
+.image-section {
+    background: #000 no-repeat center center;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
 }
-.createathon-section .container {
+.createathon-background {
+    background-image: url(../images/createathon-bg.jpg);
+}
+.wide-section .container {
     padding: 100px 0;
+}
+
+.white-background {
+    background: #FFF;
+}
+.white-background h2, .white-background p {
+    color: #444;
 }
 
 .sponsors-section {
@@ -369,14 +384,14 @@ a:focus {
 }
 
 @media(min-width:767px) {
-    .content-section {
-        padding: 150px 0;
-    }
+  .content-section {
+    padding: 150px 0;
+  }
 	.content-section iframe {
 		width: 640px;
 		height: 420px;
 	}
-	.createathon-section .container {
+	.wide-section .container {
 		padding: 150px 0;
 	}
 	.sponsors-section .container {

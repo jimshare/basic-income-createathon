@@ -16,7 +16,7 @@
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="/createathon">The Create-A-Thon</a>
+                        <a href="/createathons">The Create-A-Thons</a>
                     </li>
                     <li>
                         <a href="/#contact">Contact</a>
