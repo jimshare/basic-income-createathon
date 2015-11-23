@@ -534,3 +534,88 @@ body {
 		font-size: 16px;
 	}
 }
+
+/* Google Form stylings */
+div.ss-form-container, div.ss-container {
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.ss-form-container h1, .ss-form-container p, .ss-form-container label, .ss-form-container div {
+    color: #444;
+}
+.ss-container h1, .ss-container p, .ss-container label, .ss-container div {
+    color: #444;
+}
+
+.ss-form-container h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.ss-form-container .ss-form-desc, .ss-form-container .ss-resp-message {
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+.ss-form-container .ss-form {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.ss-form-container ol {
+    padding: 0;
+}
+
+.ss-form-container .ss-form-entry {
+    margin: 0 0 20px;
+}
+
+.ss-form-container label {
+    display: block;
+    font-size: 16px;
+}
+
+.ss-form-container label .ss-q-help, .ss-form-container label span {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.ss-form-container ul {
+    padding: 0;
+}
+
+.ss-form-container input[type="text"], .ss-form-container input[type="date"], .ss-form-container textarea {
+    background: #FFF;
+}
+
+.ss-form-container input[type="text"] {
+    width: 300px;
+}
+
+.ss-form-container textarea {
+    width: 100%;
+    max-width: 480px;
+}
+
+.ss-response-footer {
+    display: none;
+}
+
+@media(min-width:768px) {
+    .ss-form-container h1 {
+        font-size: 30px;
+        margin: 60px 0 20px;
+    }
+    .ss-form-container .ss-form-desc, .ss-form-container .ss-resp-message {
+        font-size: 24px;
+    }
+    .ss-form-container label {
+        font-size: 20px;
+    }
+    .ss-form-container label .ss-q-help, .ss-form-container label span {
+        font-size: 16px;
+    }
+    .ss-form-container input, .ss-form-container textarea {
+        font-size: 20px;
+    }
+}
