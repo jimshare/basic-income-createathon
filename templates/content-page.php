@@ -48,8 +48,11 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Past Create-A-Thons</h2>
-                <p>
-                    <a href="http://createathon-sf.universalincome.org/">San Francisco, CA (November 13-15, 2015)</a>
+                <p class="createathon-entry">
+                    <a href="http://createathon-sf.universalincome.org/">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sf_createathon_team.jpg" />
+                        San Francisco, CA (November 13-15, 2015)
+                    </a>
                 </p>
             </div>
         </div>

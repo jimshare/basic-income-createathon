@@ -383,6 +383,13 @@ a:focus {
     margin-top: 100px;
 }
 
+p.createathon-entry img {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto 10px;
+}
+
 @media(min-width:767px) {
   .content-section {
     padding: 150px 0;
