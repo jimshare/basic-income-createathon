@@ -39,6 +39,10 @@ section ul {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
+    text-align: left;
+}
+section ul ul {
+    margin: 0;
 }
 p.note {
 	font-size: 16px;
@@ -52,9 +56,12 @@ p.note {
     }
     section ul {
         margin: 0 auto 35px;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 1.6;
-        width: 80%;
+        width: 90%;
+    }
+    section ul ul {
+        width: 100%;
     }
     p.note {
     	font-size: 18px;
