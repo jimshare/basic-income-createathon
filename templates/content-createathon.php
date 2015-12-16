@@ -7,7 +7,7 @@
                         <p class="preface-text">
                         	<?php echo types_render_field("preface-text", array("output"=>"raw")); ?>
                         </p>
-                        <h1 class="brand-heading"><?php the_title(); ?></h1>
+                        <h1 class="brand-heading">Basic Income Create-A-Thon</h1>
                         <p class="intro-text">
                         	<?php echo types_render_field("location-and-date", array("output"=>"raw")); ?>
                         </p>
