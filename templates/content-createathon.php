@@ -62,26 +62,9 @@
 					<h2>Sponsors</h2>
 					<p>This event would not be possible without the support of our generous sponsors. If your organization would like to support the Create-A-Thon as well, please <a href="#contact" class="page-scroll">let us know!</a></p>
 					<div class="logo-box">
-						<?php $the_query = new WP_Query(array(
-							'post_type' => 'sponsor'
-						));
-						while ( $the_query->have_posts() ) : $the_query->the_post();
-						?>
-
-						<div class="col-lg-4 col-md-6 col-sm-6 .col-xs-12">
-							<div class="logo">
-							<?php if (types_render_field("sponsor-url", array("output" => "raw")) != '') : ?>
-								<a href="<?php echo types_render_field("sponsor-url", array("output" => "raw")); ?>" target="_blank">
-									<?php echo types_render_field("sponsor-logo", array("alt" => $post->post_title)); ?>
-								</a>
-							<?php else : ?>
-									<?php echo types_render_field("sponsor-logo", array("alt" => $post->post_title)); ?>
-							<?php endif; ?>
-							</div>
-						</div>
-
-						<?php endwhile; wp_reset_postdata(); ?>
-					</div>
+						<?php echo types_render_field("sponsors", array("output"=>"html")); ?>
+						
+					</div><!--.logo-box-->
 				</div>
 			</div>
         </div>
@@ -92,7 +75,8 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
 				<h2>Contact</h2>
-                <?php echo types_render_field("contact-information", array("output"=>"html")); ?>
+                <p>Have questions about the Create-A-Thon, or want to help sponsor the event? You can reach us at <a href="mailto:<?php echo types_render_field("contact-email", array("output"=>"raw")); ?>"><?php echo types_render_field("contact-email", array("output"=>"raw")); ?></a>.</p>
+                
             </div>
         </div>
     </section>
