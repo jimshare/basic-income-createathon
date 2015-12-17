@@ -2,7 +2,7 @@
 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
 
     <!-- Intro Header -->
-    <header id="page-top" class="intro" style="background: url('<?php echo $image[0]; ?>') no-repeat bottom center scroll; background-size: cover;">
+    <header id="page-top" class="intro" style="background: url('<?php echo $image[0]; ?>') no-repeat center center scroll; background-size: cover;">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
