@@ -34,7 +34,7 @@
                     <li>
                         <a class="page-scroll" href="#createathons">The Create-A-Thons</a>
                     </li>
-                    <li>
+                    <li class="get-started">
                         <a class="page-scroll btn btn-default" href="#organize">Get Started</a>
                     </li>
                 </ul>
