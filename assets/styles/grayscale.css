@@ -318,10 +318,7 @@ footer p {
     background-size: cover;
     -o-background-size: cover;
 }
-/*.intro {
-    height: 100%;
-    padding: 0;
-}*/
+
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
@@ -378,7 +375,7 @@ footer p {
     color: #444;
 }
 #createathon {
-    background: url('../images/createathon-bg.jpg') no-repeat bottom center scroll;
+    background: url('../images/createathon-bg.jpg') no-repeat center center scroll;
     color: #eee;
     background-size: cover;
 }
@@ -399,7 +396,7 @@ footer p {
 }
 
 #contact {
-    padding: 100px 0;
+    padding: 100px 0 150px;
 }
 
 #map {
@@ -570,6 +567,8 @@ div.ss-form-container, div.ss-container {
     /*Tablet Intro */
     body.page .intro {
         margin-top: 53px;
+        height: 100%;
+        padding: 0;
     }
     body.home .intro {
         margin-top: 0px;
@@ -600,7 +599,7 @@ div.ss-form-container, div.ss-container {
     }
 
     #contact {
-      padding: 150px 0;
+      padding: 150px 0 300px;
     }
 
     #map {
