@@ -4,7 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body {
+ /*Basic Styles*/
+ body {
     width: 100%;
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -35,6 +36,18 @@ p {
     font-size: 18px;
     line-height: 1.5;
 }
+a {
+    color: #42dca3;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #1d9b6c;
+}
 section ul {
     margin: 0 0 25px;
     font-size: 18px;
@@ -44,6 +57,139 @@ section ul {
 section ul ul {
     margin: 0;
 }
+.light {
+    font-weight: 400;
+}
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+.btn-main {
+    padding: 10px 40px;
+    font-size: 24px;
+}
+/*Keyframes*/
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #42dca3;
+    color: #42dca3;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #42dca3;
+    outline: 0;
+    color: #000;
+    background-color: #42dca3;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+/* Mobile Styles*/
 p.note {
 	font-size: 16px;
 }
@@ -60,43 +206,7 @@ body.home.page {
     background-color: #000;
 }
 
-@media(min-width:768px) {
-    p {
-        margin: 0 0 35px;
-        font-size: 24px;
-        line-height: 1.6;
-    }
-    section ul {
-        margin: 0 auto 35px;
-        font-size: 20px;
-        line-height: 1.6;
-        width: 90%;
-    }
-    section ul ul {
-        width: 100%;
-    }
-    p.note {
-    	font-size: 18px;
-    }
-}
-
-a {
-    color: #42dca3;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-a:hover,
-a:focus {
-    text-decoration: none;
-    color: #1d9b6c;
-}
-
-.light {
-    font-weight: 400;
-}
-
+/* Mobile Navbar Styling*/
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
@@ -160,24 +270,13 @@ a:focus {
 
 /* Style nav bar share buttons */
 .navbar-custom .share-buttons ul {
-	float: left;
-	margin: 0;
+    float: left;
+    margin: 0;
 }
 .navbar-custom .share-buttons li {
-	float: left;
-	margin: 10px 20px 0 0;
+    float: left;
+    margin: 10px 20px 0 0;
 }
-@media(min-width:768px) {
-	.navbar-custom .share-buttons {
-		display: none;
-	}
-}
-@media(min-width:992px) {
-	.top-nav-collapse .share-buttons {
-		display: block;
-	}
-}
-
 /* Using default button styles for nav bar */
 .navbar-custom .nav li a.btn-default {
     border: 1px solid #42dca3;
@@ -195,24 +294,16 @@ a:focus {
     background-color: #42dca3;
 }
 
-@media(min-width:768px) {
-    .navbar-custom {
-        padding: 20px 0;
-        border-bottom: 0;
-        letter-spacing: 1px;
-        background: #000;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-    .navbar-custom.top-nav-collapse {
-        padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
-    }
+/*Mobile Footer*/
+footer {
+    padding: 50px 0 50px;
+    background-color: #444;
 }
 
+footer p {
+    margin: 0;
+}
+/* Mobile Intro*/
 .intro {
     display: table;
     width: 100%;
@@ -227,7 +318,10 @@ a:focus {
     background-size: cover;
     -o-background-size: cover;
 }
-
+/*.intro {
+    height: 100%;
+    padding: 0;
+}*/
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
@@ -250,115 +344,13 @@ a:focus {
 .intro .intro-body .suffix-text {
   margin: 0 0 35px;
 }
-
-@media(min-width:768px) {
-    .intro {
-        height: 100%;
-        padding: 0;
-    }
-
-    .intro .intro-body .brand-heading {
-        font-size: 76px;
-    }
-
-    .intro .intro-body .preface-text, .intro .intro-body .intro-text, .intro .intro-body .suffix-text {
-        font-size: 22px;
-    }
-}
-
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid #fff;
-    border-radius: 100%!important;
-    font-size: 40px;
-    color: #fff;
-    background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
-
-.btn-circle:hover,
-.btn-circle:focus {
-    outline: 0;
-    color: #fff;
-    background: rgba(255,255,255,.1);
-}
-
-.btn-circle i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-}
-
-.btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-}
-
-.btn-main {
-    padding: 10px 40px;
-    font-size: 24px;
-}
-
-@media(min-width:768px) {
-	.btn-main {
-		padding: 10px 60px;
-		font-size: 32px;
-	}
-}
-
-
-@-webkit-keyframes pulse {
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@-moz-keyframes pulse {
-    0% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
+/*Local Createathon Pages*/
 .content-section {
     padding: 100px 0;
 }
 .content-section iframe {
-	width: 100%;
-	height:560px;
+    width: 100%;
+    height:560px;
 }
 
 .wide-section {
@@ -385,26 +377,29 @@ a:focus {
 .white-background h2, .white-background p {
     color: #444;
 }
+#createathon {
+    background: url('../images/createathon-bg.jpg') no-repeat bottom center scroll;
+    color: #eee;
+    background-size: cover;
+}
 
-.sponsors-section {
-    background-color: #FFF;
-    color: #444
+#sponsors {
+    background-color: #444;
+    color: #eee;
 }
-.sponsors-section .container {
-    padding: 50px 0;
-}
+
 .sponsors-section .logo {
-	padding: 0 0 30px;
+    padding: 0 0 30px;
 }
 .sponsors-section .logo img {
-	display: block;
-	width: 100%;
-	max-width: 300px;
-	margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 #contact {
-    padding: 100px 0 150px;
+    padding: 100px 0;
 }
 
 #map {
@@ -420,149 +415,42 @@ p.createathon-entry img {
     margin: 0 auto 10px;
 }
 
-@media(min-width:767px) {
-  .content-section {
-    padding: 150px 0;
-  }
-	.content-section iframe {
-		width: 640px;
-		height: 420px;
-	}
-	.wide-section .container {
-		padding: 150px 0;
-	}
-	.sponsors-section .container {
-		padding: 100px 0;
-	}
-
-	#contact {
-		padding: 150px 0 300px;
-	}
-
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
+.idea-factory--wrap {
+    height: 600px;
 }
-
-.btn {
-    border-radius: 0;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+.idea-factory--wrap p {
+    font-size: 16px;
 }
-
-.btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
-    background-color: transparent;
-}
-
-.btn-default:hover,
-.btn-default:focus {
-    border: 1px solid #42dca3;
-    outline: 0;
-    color: #000;
-    background-color: #42dca3;
-}
-
-ul.banner-social-buttons {
-    margin-top: 0;
-}
-
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
-    ul.banner-social-buttons li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
-    }
-}
-
-footer {
-    padding: 50px 0 50px;
-    background-color: #444;
-}
-
-footer p {
-    margin: 0;
-}
-
-::-moz-selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
-}
-
-::selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
-}
-
-img::selection {
-    background: 0 0;
-}
-
-img::-moz-selection {
-    background: 0 0;
-}
-
-body {
-    webkit-tap-highlight-color: rgba(255,255,255,.2);
-}
-
 /* Idea Factory styles */
 .idea-factory--wrap {
-	background: #FFF;
-	color: #000;
-	height: 400px;
-	overflow: auto;
+    background: #FFF;
+    color: #000;
+    height: 400px;
+    overflow: auto;
 }
 
 .idea-factory--wrap h2, .idea-factory--wrap h3, .idea-factory--wrap p {
-	text-align: left;
+    text-align: left;
 }
 
 .idea-factory--wrap h2 {
-	font-size: 18px;
+    font-size: 18px;
 }
 
 .idea-factory--submit-left {
-	font-size: 20px;
+    font-size: 20px;
 }
 
 .idea-factory--wrap p {
-	font-size: 16px;
+    font-size: 16px;
 }
 
 .idea-factory-modal {
-	color: #000;
+    color: #000;
 }
 
 .idea-factory-modal label {
-	text-align: left;
-}
-
-@media(min-width:768px) {
-	.idea-factory--wrap {
-		height: 600px;
-	}
-	.idea-factory--wrap p {
-		font-size: 16px;
-	}
+    text-align: left;
 }
 
 /* Google Form stylings */
@@ -631,7 +519,104 @@ div.ss-form-container, div.ss-container {
     display: none;
 }
 
+/*Tablet Styling*/
 @media(min-width:768px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 24px;
+        line-height: 1.6;
+    }
+    section ul {
+        margin: 0 auto 35px;
+        font-size: 20px;
+        line-height: 1.6;
+        width: 90%;
+    }
+    section ul ul {
+        width: 100%;
+    }
+    p.note {
+    	font-size: 18px;
+    }
+    .navbar-custom .share-buttons {
+        display: none;
+    }
+    .navbar-custom li.get-started {
+        width: 135px;
+    }
+    body.page .navbar-custom {
+        background: #000;
+    }
+    body.home .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        background-color: transparent;
+    }
+    body.home .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #000;
+    }
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #000;
+    }
+    /*Tablet Intro */
+    body.page .intro {
+        margin-top: 53px;
+    }
+    body.home .intro {
+        margin-top: 0px;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 76px;
+    }
+
+    .intro .intro-body .preface-text, .intro .intro-body .intro-text, .intro .intro-body .suffix-text {
+        font-size: 22px;
+    }
+    .btn-main {
+        padding: 10px 60px;
+        font-size: 32px;
+    }
+
+    /*Tablet: Local Createathon Pages*/
+    .content-section {
+        padding: 150px 0;
+    }
+    .content-section iframe {
+      width: 640px;
+      height: 420px;
+    }
+    .wide-section .container {
+      padding: 150px 0;
+    }
+
+    #contact {
+      padding: 150px 0;
+    }
+
+    #map {
+        height: 400px;
+        margin-top: 250px;
+    }
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+    /*Tablet Google Form Styling*/
     .ss-form-container h1 {
         font-size: 30px;
         margin: 60px 0 20px;
@@ -648,4 +633,21 @@ div.ss-form-container, div.ss-container {
     .ss-form-container input, .ss-form-container textarea {
         font-size: 20px;
     }
+
 }
+
+/*Desktop Styling*/
+@media(min-width:992px) {
+	.top-nav-collapse .share-buttons {
+		display: block;
+	}
+}
+
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+
