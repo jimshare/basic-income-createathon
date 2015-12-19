@@ -538,13 +538,10 @@ div.ss-form-container, div.ss-container {
     .navbar-custom .share-buttons {
         display: none;
     }
-    .navbar-custom li.get-started {
+    .navbar-custom li.get-started, .navbar-custom li.register {
         width: 135px;
     }
-    body.page .navbar-custom {
-        background: #000;
-    }
-    body.home .navbar-custom {
+    .navbar-custom {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
@@ -553,6 +550,12 @@ div.ss-form-container, div.ss-container {
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         background-color: transparent;
+    }
+    body.about .navbar-custom, body.organize .navbar-custom, body.page-template-template-content .navbar-custom {
+        background: #000;
+    }
+    .navbar-custom .container {
+        width: 768px;
     }
     body.home .navbar-custom.top-nav-collapse {
         padding: 0;
@@ -566,7 +569,6 @@ div.ss-form-container, div.ss-container {
     }
     /*Tablet Intro */
     body.page .intro {
-        margin-top: 53px;
         height: 100%;
         padding: 0;
     }
@@ -640,6 +642,9 @@ div.ss-form-container, div.ss-container {
 	.top-nav-collapse .share-buttons {
 		display: block;
 	}
+    .navbar-custom .container {
+        width: 992px;
+    }
 }
 
 
