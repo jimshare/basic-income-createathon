@@ -37,7 +37,7 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
-                    <li>
+                    <li class="register">
                         <a class="page-scroll btn btn-default" href="#register">Register</a>
                     </li>
                 </ul>
