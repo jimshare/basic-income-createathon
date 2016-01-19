@@ -198,9 +198,13 @@ body.page {
     background: #eee;
     color: #444;
 }
-body.page-template-template-guide, body.page-template-template-content {
+body.page-template-template-guide {
     background: #000;
     color: #fff;
+}
+body.page-template-template-content {
+    background: #fff;
+    color: #444;
 }
 body.page footer {
     color: #fff;
