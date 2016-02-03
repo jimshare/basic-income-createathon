@@ -4,7 +4,7 @@
     <section id="about" class="container content-section text-center" style="background: url('<?php echo $image[0]; ?>') no-repeat center center scroll; background-size: cover; margin: 0;">
         <div class="row">
             <h1><?php the_title(); ?></h1>
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-md-8 col-md-offset-2">
                 <?php the_content(); ?>
             </div>
         </div>
