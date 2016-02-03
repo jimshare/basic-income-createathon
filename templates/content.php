@@ -18,7 +18,7 @@
     </div><!--.tags-->
     
     <h2><a href="<?php the_permalink()?>"><?php echo $post->post_title; ?></a></h2>
-    <time class="date">August 26, 2015</time>
+    
     <?php if ( has_post_thumbnail() ) : ?>
         <a class="blog-link mobile-only" href="<?php echo($perm); ?>" title="<?php echo($alt_text); ?>"><?php echo($img); ?></a>
     <?php endif; ?>
