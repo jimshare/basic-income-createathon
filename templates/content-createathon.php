@@ -1,9 +1,9 @@
 
 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
 
-<!-- Intro Header -->
-<header id="page-top" class="intro" style="background: url('<?php echo $image[0]; ?>') no-repeat center center scroll; background-size: cover;">
-    <div class="intro-body">
+<!-- Hero Section -->
+<header id="page-top" class="hero createathon-hero" style="background: url('<?php echo $image[0]; ?>') no-repeat center center scroll; background-size: cover;">
+    <div class="hero-body">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -11,16 +11,16 @@
                        <?php echo types_render_field("preface-text", array("output"=>"raw")); ?>
                    </p>
                    <h1 class="brand-heading">Basic Income Create-A-Thon</h1>
-                   <p class="intro-text">
+                   <p class="hero-text">
                        <?php echo types_render_field("location-and-date", array("output"=>"raw")); ?>
                    </p>
                    <a href="#register" class="btn btn-default btn-main page-scroll">
                     Register
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
 </header>
 
 <!-- About Section -->

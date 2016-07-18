@@ -37,7 +37,7 @@ p {
     line-height: 1.5;
 }
 a {
-    color: #42dca3;
+    color: #15988d;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -53,6 +53,7 @@ section ul {
     font-size: 18px;
     line-height: 1.5;
     text-align: left;
+    color: #444;
 }
 section ul ul {
     margin: 0;
@@ -150,17 +151,18 @@ section ul ul {
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
+    border: 1px solid #15988d;
+    color: #15988d;
     background-color: transparent;
 }
 
 .btn-default:hover,
-.btn-default:focus {
-    border: 1px solid #42dca3;
+.btn-default:focus,
+.btn-default-hover {
+    border: 1px solid #15988d;
     outline: 0;
-    color: #000;
-    background-color: #42dca3;
+    color: #444;
+    background-color: #15988d;
 }
 
 ul.banner-social-buttons {
@@ -203,7 +205,7 @@ body.page-template-template-guide {
     color: #fff;
 }
 body.page-template-template-content {
-    background: #fff;
+    background: #eee;
     color: #444;
 }
 body.page footer {
@@ -287,8 +289,8 @@ body.home.page {
 }
 /* Using default button styles for nav bar */
 .navbar-custom .nav li a.btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
+    border: 1px solid #15988d;
+    color: #15988d;
     background-color: transparent;
     margin-left: 10px;
     width: 158px;
@@ -296,60 +298,78 @@ body.home.page {
 
 .navbar-custom .nav li a.btn-default:hover,
 .navbar-custom .nav li a.btn-default:focus {
-    border: 1px solid #42dca3;
+    border: 1px solid #15988d;
     outline: 0;
-    color: #000;
-    background-color: #42dca3;
+    color: #444;
+    background-color: #15988d;
 }
 
 /*Mobile Footer*/
 footer {
-    padding: 50px 0 50px;
-    background-color: #444;
+    padding: 30px 0 30px;
+    background-color: #3d3d3d;
 }
 
 footer p {
     margin: 0;
+    font-size: 16px;
 }
-/* Mobile Intro*/
-.intro {
+/* Mobile Home and Intro */
+.hero {
     display: table;
     width: 100%;
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
-    background: url(../images/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: #000;
+    color: #444;
+    background: #eee;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
+.page-hero {
+    color: #eee;
+}
+.createathon-hero {
+    color: #eee;
+    background: #000 url(../images/intro-bg.jpg) no-repeat bottom center scroll;
+}
 
-.intro .intro-body {
+.hero .hero-logo {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 0 40px;
+}
+
+.hero .hero-body {
     display: table-cell;
     vertical-align: middle;
 }
 
-.intro .intro-body .preface-text, .intro .intro-body .suffix-text {
+.hero .hero-body .preface-text, .hero .hero-body .suffix-text {
     font-size: 18px;
     margin: 0;
 }
 
-.intro .intro-body .brand-heading {
+.hero .hero-body .brand-heading {
     font-size: 40px;
     margin: 0;
 }
 
-.intro .intro-body .intro-text {
+.hero .hero-body .hero-text {
     font-size: 18px;
 }
 
-.intro .intro-body .suffix-text {
-  margin: 0 0 35px;
+.hero .hero-body .suffix-text {
+    margin: 0 0 35px;
 }
-/*Local Createathon Pages*/
+
+h2.large-title {
+    font-size: 32px;
+}
+
+/* Local Create-a-thon Pages */
 .content-section {
     padding: 100px 0;
 }
@@ -371,6 +391,9 @@ footer p {
 }
 .createathon-background {
     background-image: url(../images/createathon-bg.jpg);
+}
+.survey-background {
+    background-image: url(../images/YC_QA_dark.jpg);
 }
 .wide-section .container {
     padding: 100px 0;
@@ -533,7 +556,7 @@ div.ss-form-container, div.ss-container {
 .ss-response-footer {
     display: none;
 }
-/*Content and Guide Templates*/
+/* Content and Guide Templates */
 section#about {
     padding: 150px 20px;
     width: 100%;
@@ -550,7 +573,7 @@ section#about {
     }
     section ul {
         margin: 0 auto 35px;
-        font-size: 20px;
+        font-size: 24px;
         line-height: 1.6;
         width: 90%;
     }
@@ -576,8 +599,10 @@ section#about {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         background-color: transparent;
     }
-    body.about .navbar-custom, body.organize .navbar-custom, body.page-template-template-content .navbar-custom {
-        background: #000;
+    body.home .navbar-custom, body.about .navbar-custom, body.organize .navbar-custom, body.page-template-template-content .navbar-custom {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #3d3d3d;
     }
     .navbar-custom .container {
         width: 768px;
@@ -585,32 +610,40 @@ section#about {
     body.home .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
+        background: #3d3d3d;
     }
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
+        background: #3d3d3d;
     }
     /*Tablet Intro */
-    body.page .intro {
+    body.page .hero {
         height: 100%;
         padding: 0;
     }
-    body.home .intro {
+    body.home .hero {
         margin-top: 0px;
     }
 
-    .intro .intro-body .brand-heading {
+    .hero .hero-logo {
+        margin: 60px 0 40px;
+    }
+
+    .hero .hero-body .brand-heading {
         font-size: 76px;
     }
 
-    .intro .intro-body .preface-text, .intro .intro-body .intro-text, .intro .intro-body .suffix-text {
+    .hero .hero-body .preface-text, .hero .hero-body .hero-text, .hero .hero-body .suffix-text {
         font-size: 22px;
     }
     .btn-main {
         padding: 10px 60px;
         font-size: 32px;
+    }
+
+    h2.large-title {
+        font-size: 48px;
     }
 
     /*Tablet: Local Createathon Pages*/
