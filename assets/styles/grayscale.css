@@ -411,7 +411,7 @@ h2.large-title {
     background-size: cover;
 }
 
-#sponsors {
+#createathon_list, #sponsors {
     background-color: #444;
     color: #eee;
 }

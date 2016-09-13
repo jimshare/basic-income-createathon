@@ -32,14 +32,14 @@
     </section>
 
     <!-- Create-A-Thons Section -->
-    <section id="basic_income" class="text-center">
-        <div class="wide-section white-background">
+    <section id="createathon_list" class="text-center">
+        <div class="wide-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                
-                  <?php 
-                  $upcoming_createathon_loop = new WP_Query( array( 
-                    'post_type' => 'create-a-thon',                 
+
+                  <?php
+                  $upcoming_createathon_loop = new WP_Query( array(
+                    'post_type' => 'create-a-thon',
                     'meta_key'   => 'wpcf-date',
                     'meta_type' => DATETIME,
                     'orderby' => 'meta_value_num',
@@ -51,26 +51,26 @@
                         'value'   => 1
                       ),
                     ),
-                  ) ); 
+                  ) );
                   if ( $upcoming_createathon_loop->have_posts() ) : ?>
                     <h2>Upcoming Create-A-Thons</h2>
 
                       <p>
                       <?php while ( $upcoming_createathon_loop->have_posts() ) : $upcoming_createathon_loop->the_post(); ?>
 
-                            <a href="<?php echo types_render_field("event-url",array("raw"=>true));?>" target="_blank"><?php the_title();?></a>: <?php echo types_render_field("location-and-date", array("raw"=>true));?>
-                            <br/>                      
-                        
-                      <?php endwhile; 
+                            <a href="<?php echo types_render_field("event-url",array("raw"=>true));?>" target="_blank"><?php the_title();?>:</a> <?php echo types_render_field("location-and-date", array("raw"=>true));?>
+                            <br/>
+
+                      <?php endwhile;
                       wp_reset_postdata();
                     endif; ?>
                   </p>
 
                   <h2>Past Create-A-Thons</h2>
                   <p>
-                  <?php 
-                  $past_createathon_loop = new WP_Query( array( 
-                    'post_type' => 'create-a-thon',                 
+                  <?php
+                  $past_createathon_loop = new WP_Query( array(
+                    'post_type' => 'create-a-thon',
                     'meta_key'   => 'wpcf-date',
                     'meta_type' => DATETIME,
                     'orderby' => 'meta_value_num',
@@ -82,13 +82,13 @@
                       ),
                     ),
                     'posts_per_page' => -1
-                  ) ); 
-                      if ( $past_createathon_loop->have_posts() ) : while ( $past_createathon_loop->have_posts() ) : $past_createathon_loop->the_post(); 
+                  ) );
+                      if ( $past_createathon_loop->have_posts() ) : while ( $past_createathon_loop->have_posts() ) : $past_createathon_loop->the_post();
                         ?>
-                            <a href="<?php echo types_render_field("event-url",array("raw"=>true));?>" target="_blank"><?php the_title();?></a>: <?php echo types_render_field("location-and-date", array("raw"=>true));?>
+                            <a href="<?php echo types_render_field("event-url",array("raw"=>true));?>" target="_blank"><?php the_title();?>:</a> <?php echo types_render_field("location-and-date", array("raw"=>true));?>
                             <br/>
 
-                      <?php endwhile; 
+                      <?php endwhile;
                       wp_reset_postdata();
                     endif; ?>
                   </p>
