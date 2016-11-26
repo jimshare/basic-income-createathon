@@ -21,6 +21,9 @@
                     <li>
                         <a href="/createathons">Create-a-thons</a>
                     </li>
+                    <li>
+                        <a class="btn btn-default" href="https://secure.actblue.com/contribute/page/universal-income-project" target="_blank">Donate</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

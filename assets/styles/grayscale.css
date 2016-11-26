@@ -583,6 +583,12 @@ section#about {
     p.note {
     	font-size: 18px;
     }
+    .navbar-custom .nav li a {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
     .navbar-custom .share-buttons {
         display: none;
     }
