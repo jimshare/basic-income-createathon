@@ -713,7 +713,10 @@ section#about {
         width: 992px;
     }
     .sponsors-section li {
-        width: 33%;
+    }
+
+    .sponsors-section .logo img {
+        max-width: 300px;
     }
 }
 
