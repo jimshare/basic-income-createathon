@@ -22,7 +22,7 @@
                         <a href="/createathons">Create-a-thons</a>
                     </li>
                     <li>
-                        <a class="btn btn-default" href="https://secure.actblue.com/contribute/page/universal-income-project" target="_blank">Donate</a>
+                        <a class="btn btn-default" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5ZKXZHBL379MC" target="_blank">Donate</a>
                     </li>
                 </ul>
             </div>
